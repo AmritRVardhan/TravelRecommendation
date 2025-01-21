@@ -9,10 +9,10 @@
 - While preprocesing there was no NA or Null values which made life easier as there was no Imputation required for such data.
 - We did not have any cold start data too. Users that had no visit/like/add_to_list altogether.
 - My first idea was to merge all the dataset into one for better handling and easier management, but I was able to work without it.
-- For weight to different user interactions, I took the liberty to assign weight to **like** as 1, as a random user can like just out of curiosity or even mistake. Though if we have more data or inferences we can acquire from the app, that would make the model better. **add_to_list** is 2 and **visit** is 3. Though in future, if there is data that somebody has liked a place before, visited and then unliked or removed from list, we can use that data to infer more about the place.
-- The test data was created using only few data(20%) from the list_of_places from users.csv, rather than splitting based on different users. Holding out data that they actually visited or liked or added to list, so that we can predict using the model. A better approach would be to have way more data and split based on each individual interactio rather than assuming all the interactions are same.
+- For weight to different user interactions, I took the liberty to assign weight to **like** as 1, as a random user can like just out of curiosity or even mistake. Though if we have more data or inferences we can acquire from the app, that would make the model better. **add_to_list** is 2 and **visit** is 3. In future, if there is data that somebody has liked a place before, visited and then unliked or removed from list, we can use that data to infer more about the place.
+- The test data was created using only few data(20%) from the list_of_places from users.csv, rather than splitting based on different users. Holding out data that they actually visited or liked or added to list, so that we can predict using the model. A better approach would be to have way more data and split based on each individual interaction rather than assuming all the interactions are same.
 - Popularity can be added, basically if a lot of users like a place that should take some weight in scoring a recommendation.
-- Tuning different weights to interaction_type will lead to a better result. Needs more experimentation
+- Tuning different weights to interaction_type will lead to a better result. Needs more experimentation.
 
 # Model
 - The weight to both Collaorative filtering, cf and LightFM is 0.3, 0.4, 0.3.
