@@ -16,12 +16,11 @@
 
 # Model
 - The weight to both Collaorative filtering and Content based filtering is 0.5.
-- Response time calculated has been lower than 500ms.
-- I would like to experiment more models on this.
-- 
+- I would like to experiment more models on this. LightFM, DeepFM, Random Forest for hybrid recommendations.
+
 
 # Evaluation
-Recall@K, MAP, Precison@K implemented. 
+Recall@K, MAP, Precison@K implemented. Response time calculated has been lower than 500ms.
 
 # Notes
 - We are lacking features, if gathering data from user to make features is tough, getting data for the place from public domains to create a description would help in creating a feature where we could use TF-IDF(or similar NLP methodologies) and have a better recommendation system.
