@@ -3,7 +3,7 @@
 # Running
 - To run the fastest way, open up a kaggle environment, upload all the data files, copy paste the code.
 - To run locally, just copy the code, change the location of files, and run. Popular python packages should suffice. Requirements.txt file supplied.
-- The producitonzied way would be to have a docker environment with proper requirement.txt and makefiles.
+- The producitonized way would be to have a docker environment with proper requirement.txt and makefiles.
 
 # Preprocess
 - While preprocesing there was no NA or Null values which made life easier as there was no Imputation required for such data.
