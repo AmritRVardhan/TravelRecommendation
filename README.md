@@ -15,8 +15,8 @@
 - Tuning different weights to interaction_type will lead to a better result. Needs more experimentation
 
 # Model
-- The weight to both Collaorative filtering and Content based filtering is 0.5.
-- I would like to experiment more models on this. LightFM, DeepFM, Random Forest for hybrid recommendations.
+- The weight to both Collaorative filtering, cf and LightFM is 0.3, 0.4, 0.3.
+- I would like to experiment more models on this. DeepFM, Random Forest for hybrid recommendations.
 
 
 # Evaluation
@@ -28,3 +28,4 @@ Recall@K, MAP, Precison@K implemented. Response time calculated has been lower t
 - This was coded in <1 day, with learning about recommendations engine. There is a lot more that can be improved about the code.
 - There's a lot of error handling that can be introduced to the code. - WOOPS
 - Given more time I would look more into interaction matrix and how I can make it more useful apart from in SVD.
+- Precision and recall are not changin anymore, need to fix, it's 1:15AM and I am tired. 
