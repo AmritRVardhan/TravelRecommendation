@@ -29,3 +29,4 @@ Recall@K, MAP, Precison@K implemented. Response time calculated has been lower t
 - There's a lot of error handling that can be introduced to the code. - WOOPS
 - Given more time I would look more into interaction matrix and how I can make it more useful apart from in SVD.
 - Precision and recall are not changin anymore, need to fix, it's 1:15AM and I am tired. 
+- The right way to code would be to create python scripts under different folder in src, models etc.
